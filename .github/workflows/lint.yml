@@ -3,6 +3,16 @@ name: lint
 on: [push, pull_request]
 
 jobs:
+  build_02:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: debug-link
+        run: |
+          pip install pre-commit
+          pre-commit run --all-files
+
+
   lint:
     runs-on: ubuntu-latest
     steps:
