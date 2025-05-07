@@ -42,7 +42,7 @@ jobs:
           use-verbose-mode: 'yes'
 #          check-modified-files-only: 'yes'
           config-file: '.github/md-link-config.json'
-          file-path: './README.md, ./LICENSE, ./README_zh-CN.md, ./docs/en/quantization/w4a16.md, ./docs/zh_cn/benchmark/evaluate_with_opencompass.md'
+          file-path: '.github/CONTRIBUTING.md, ./README.md, ./LICENSE, ./README_zh-CN.md, ./docs/en/quantization/w4a16.md, ./docs/zh_cn/benchmark/evaluate_with_opencompass.md'
       - name: Check module init files
         run: |
           python -m pip install fire
