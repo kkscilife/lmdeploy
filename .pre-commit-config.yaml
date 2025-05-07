@@ -3,4 +3,4 @@ repos:
   rev: v3.11.2
   hooks:
     - id: markdown-link-check
-      args: [-q]
+      args: [-q,-v,-c .github/md-link-config.json,'./README.md, ./LICENSE, ./README_zh-CN.md, ./docs/en/quantization/w4a16.md, ./docs/zh_cn/benchmark/evaluate_with_opencompass.md']
