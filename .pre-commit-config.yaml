@@ -8,4 +8,6 @@ repos:
   rev: lychee-v0.18.1
   hooks:
     - id: lychee-docker
-      args: ["-c lychee.toml","--no-progress", "."]
+      args: ["-c /app/lychee.toml","--no-progress", "."]
+      volumes:
+        - "{cwd}:/app"
